@@ -1,0 +1,34 @@
+  subnets = [
+      "subnet-9ce407d6", 
+      "subnet-9c17d1e4", 
+      "subnet-5b4f9e06"
+      ]
+
+  vpc_id = "vpc-73c4b10b"
+  instance_type = "m4.large"
+  asg_max_size = 5
+  region = "us-west-2"
+
+
+
+# Mapping
+tags = {
+    Env            = "Development"
+    Billing        = "SMA"
+    Application    = "Artemis"
+    Region         = "us-east-1"
+    Created_by     = "Akynbek"
+    Team           = "DevOps"
+    Managed_by     = "infrastructure"
+    Quarter        = 3
+    Name           = "My"
+
+}
+
+# Below code is used to set backend only
+environment                     =   "oregon"
+s3_bucket                       =   "terraform-state-april-class-akynbek"
+s3_folder_project               =   "eks"
+s3_folder_region                =   "us-east-1"
+s3_folder_type                  =   "tools"
+s3_tfstate_file                 =   "eks.tfstate"

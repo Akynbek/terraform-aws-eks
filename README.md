@@ -1,2 +1,1 @@
-# terraform-aws-eks
-Elastic Kubernetes Service (Amazon EKS)
+# terraform-class-april-2020
